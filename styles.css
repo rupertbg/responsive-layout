@@ -1,0 +1,95 @@
+/* Main Stylesheet for Student Portfolio project by Rupert Bryant-Greene for Team Treehouse */
+
+/*****************************************
+        ~~~~~  Header Styles  ~~~~~
+*****************************************/
+
+header {
+  
+  background-color: aliceblue;
+  
+}
+
+.main-header,
+.main-nav {
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.main-header h1,
+.main-header p, 
+.main-header img {
+  
+  align-self: center;
+  text-align: center;
+  
+}
+
+.main-header img {
+  
+  margin: 50px 0 25px 0;
+  width: 70%;
+  
+}
+
+.main-header p {
+  
+  margin: 0px 20px 50px;
+  font-size: 1.5em;
+  font-weight: 200;
+  
+}
+
+/*****************************************
+         ~~~~~  Nav Styles  ~~~~~
+*****************************************/
+
+
+.main-nav ul {
+  
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  width: 97.5%;
+  
+}
+
+.main-nav li {
+  
+  list-style: none;
+  
+}
+
+.main-nav a {
+  
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  font-size: 1.125em;
+  text-align: center;
+  padding: 1em;
+  margin: .4em;
+  border-radius: 5px;
+  
+}
+
+.main-nav a:hover {
+  
+  color: #0b0b0b;
+  background-color: yellow;
+  
+}
+
+
+/*****************************************
+       ~~~~~  Tablet Styles  ~~~~~
+*****************************************/
+
+@media only screen and (max-width: 1024px) {
+  
+}

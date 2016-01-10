@@ -1,0 +1,42 @@
+/* Navigation Stylesheet for Student Portfolio project by Rupert Bryant-Greene for Team Treehouse */
+
+/*****************************************
+         ~~~~~  Nav Styles  ~~~~~
+*****************************************/
+
+
+.main-nav ul {
+  
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  width: 80%;
+  
+}
+
+.main-nav li {
+  
+  list-style: none;
+  
+}
+
+.main-nav a {
+  
+  display: block;
+  color: black;
+  background-color: white;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  padding: .4em;
+  margin: .4em;
+  width: 80%;
+  
+}
+
+.main-nav a:hover {
+  
+  color: #0b0b0b;
+  background-color: yellow;
+  
+}
