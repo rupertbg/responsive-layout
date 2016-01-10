@@ -11,7 +11,8 @@ header {
 }
 
 .main-header,
-.main-nav {
+.main-nav, 
+.profile {
   
   display: flex;
   flex-direction: column;
@@ -23,14 +24,12 @@ header {
 .main-header img {
   
   align-self: center;
-  text-align: center;
   
 }
 
 .main-header img {
   
   margin: 50px 0 25px 0;
-  width: 70%;
   
 }
 
@@ -42,6 +41,12 @@ header {
   
 }
 
+.profiletext {
+  display: block;
+  margin: 50px 0 25px 0;
+  text-align: center;
+}
+
 /*****************************************
          ~~~~~  Nav Styles  ~~~~~
 *****************************************/
@@ -51,8 +56,8 @@ header {
   
   padding: 0;
   margin: 0;
-  align-self: center;
   width: 97.5%;
+  align-self: center;
   
 }
 
@@ -90,6 +95,56 @@ header {
        ~~~~~  Tablet Styles  ~~~~~
 *****************************************/
 
-@media only screen and (max-width: 1024px) {
+@media (min-width: 480px) {
   
+  .main-nav ul {
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+
+  }
+
+  .main-nav li {
+
+    list-style: none;
+
+  }
+
+  .main-nav a {
+
+    background-color: transparent;
+
+  }
+
+  .main-nav a:hover {
+
+    color: #0b0b0b;
+    background-color: yellow;
+
+  }
+
+  .main-header img {
+
+    float: right;
+
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }  
+  
+  .profiletext {
+    order: 1;
+    text-align: left;
+  }
+  
+  .profilepic {
+    order: 2;
+  }
 }
