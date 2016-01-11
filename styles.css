@@ -43,13 +43,13 @@ h2 {
        ~~~~~  Profile Styles  ~~~~~
 *****************************************/
 
-.profiletext {
+.profile-text {
   display: block;
   margin: 25px 5% 50px 5%;
   text-align: center;
 }
 
-.profilepic {
+.profile-pic {
   
   max-height: 225px;
   max-width: 367px;
@@ -160,7 +160,7 @@ h2 {
     justify-content: center;
 }  
   
-  .profiletext {
+  .profile-text {
   
 	order: 1;
 	text-align: left;
@@ -168,7 +168,7 @@ h2 {
     margin: 0 1% 0 3%;
 }
   
-  .profilepic {
+  .profile-pic {
 
     order: 2;
     width: 40%;
@@ -194,7 +194,7 @@ h2 {
     
   }
 
-  .desktop-flex {
+  .desktop-nav {
     
     display: flex;
     flex-flow: row;
