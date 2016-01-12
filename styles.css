@@ -68,8 +68,9 @@ h3 {
 
 .header-container {
     
-    max-width: 1366px;
-    margin: 0 auto;
+  max-width: 1366px; 
+  margin: 0 auto;
+  box-shadow: 0 5px 10px #ddd, inset 0 5px 10px #ddd;
     
   }
 
@@ -79,7 +80,7 @@ h3 {
 
 .main-nav {
 
- padding: 10px 0 30px;
+ margin: 10px 0 30px;
  
  }
 
@@ -155,39 +156,38 @@ h3 {
 *****************************************/
 
 .portfolio-content {
-	
-	text-align: center;
-	list-style: none;
-	max-width: 1250px;
-	margin: 0 auto;
-	padding: 0 2.5% 50px;
-	display: flex;
-	flex-flow: column;
-    background-color: linear-gradient(#000, #fff);
+    
+  text-align: center;
+  list-style: none;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2.5% 50px;
+  display: flex;
+  flex-flow: column;
 
 }
 
 .portfolio-item {
 
-	width: 100%;
-	height: auto;
-	margin: 0;
-	padding: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 
 }
 
 .portfolio-item img {
   
-  	width: 100%;
-  	height: auto;
-  	padding: 0;
-  	margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
   
   }
   
 .portfolio-item img:hover {
 
-	opacity: 0.4;
+  opacity: 0.4;
 }
 
 /*****************************************
@@ -196,16 +196,16 @@ h3 {
 
 .contact {
 
-	padding: 25px;
-	text-align: center;
-	
+  padding: 25px;
+  text-align: center;
+    
 }
 
 .contact-content {
-	
-	max-width: 520px;
-	margin: 0 auto 75px;
-	
+    
+  max-width: 520px;
+  margin: 0 auto 75px;
+    
 }
 
 /*****************************************
@@ -213,9 +213,10 @@ h3 {
 *****************************************/
 
 footer {
-	
+    
+  box-shadow: inset 0 5px 10px #ddd;
   background-color: #fafafa;
-	
+    
 }
 
 .footer-title {
@@ -282,18 +283,18 @@ footer {
   /* Profile */
   
   .profile {
-	display: flex;
-	flex-flow: row;
+    display: flex;
+    flex-flow: row;
     justify-content: center;
-}  
+  }  
   
   .profile-text {
   
-	order: 1;
-	text-align: left;
-	width: 62%;
+    order: 1;
+    text-align: left;
+    width: 62%;
     margin: 0 1% 0 3%;
-}
+  }
   
   .profile-pic {
 
@@ -309,71 +310,71 @@ footer {
 
   
   .portfolio-content {
-  	display: flex;
-  	flex-flow: row wrap;
-  	justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
   
   .portfolio-item {
-  	
-  	width: 50%;
-  	height: auto;
-  	
+    
+    width: 48%;
+    height: auto;
+    
   }
 
   /* Footer */
 
-.footer-nav ul {
-  
-  list-style: none;
-  padding: 0;
-  margin: 30px 0 0 auto;
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  align-self: center;
-  
-}
+  .footer-nav ul {
 
-.footer-nav a {
-  
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: darkslategray;
-  background-color: #fafafa;
-  font-size: 1em;
-  text-align: center;
-  margin: 0.25em 0 0.25em 2em;
-  border-radius: 5px;
-  
-}
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-self: center;
 
-.footer-nav a:visited {
-  
-  color: #6f6f6f;
-  
-}
+  }
 
-.footer-nav a:hover {
-  
-  color: #0b0b0b;
-  
-}
+  .footer-nav a {
 
-.footer-nav a:active {
-  
-  color: #0b0b0b;
-  
-}
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: darkslategray;
+    background-color: #fafafa;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.25em 0 0.25em 2em;
+    border-radius: 5px;
 
-.footer-mobiletop {
-  
-  display: none;
-  
-}
-  
+  }
+
+  .footer-nav a:visited {
+
+    color: #6f6f6f;
+
+  }
+
+  .footer-nav a:hover {
+
+    color: #0b0b0b;
+
+  }
+
+  .footer-nav a:active {
+
+    color: #0b0b0b;
+
+  }
+
+  .footer-mobiletop {
+
+    display: none;
+
+  }
+
 }
 
 /*****************************************
@@ -399,6 +400,12 @@ footer {
     
   }
   
+  .main-nav {
+
+    margin: 10px 0 0;
+ 
+  }
+  
   .main-nav ul {
     
     margin: 15px 3% 30px auto;
@@ -408,8 +415,8 @@ footer {
     
   .portfolio-item {
   
-  	width: 33%;
-  	height: auto;
+    width: 32%;
+    height: auto;
   
   }
 
