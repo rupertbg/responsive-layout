@@ -1,15 +1,20 @@
 /* Main Stylesheet for Student Portfolio project by Rupert Bryant-Greene for Team Treehouse */
 
 /*****************************************
-        ~~~~~  Header Styles  ~~~~~
+         ~~~~~  Site Styles  ~~~~~
 *****************************************/
 
- p {
+p {
   
   font-size: 1.2em;
   line-height: 1.2em;
   font-weight: 200;
+  color: darkslategray;
   
+}
+
+b {
+	font-weight: 500;
 }
 
 h1 {
@@ -22,12 +27,16 @@ h1 {
 h2 {
   
   text-align: center;
-  margin: 0 auto;
+  font-size: 1em;
   margin: 50px;
   color: darkslategray;
   text-transform: uppercase;
   
 }
+
+/*****************************************
+        ~~~~~  Header Styles  ~~~~~
+*****************************************/
 
  header,
 .main-nav, 
@@ -39,25 +48,12 @@ h2 {
   
 }
 
-/*****************************************
-       ~~~~~  Profile Styles  ~~~~~
-*****************************************/
-
-.profile-text {
-  display: block;
-  margin: 25px 5% 50px 5%;
-  text-align: center;
-}
-
-.profile-pic {
-  
-  max-height: 225px;
-  max-width: 367px;
-  width: 75%;
-  height: auto;
-  margin: 0 auto;
-  
-}
+.header-container {
+    
+    max-width: 1366px;
+    margin: 0 auto;
+    
+  }
 
 /*****************************************
          ~~~~~  Nav Styles  ~~~~~
@@ -120,12 +116,101 @@ h2 {
   
 }
 
+/*****************************************
+       ~~~~~  Profile Styles  ~~~~~
+*****************************************/
+
+.profile-text {
+  display: block;
+  padding: 0 0 25px 0;
+  margin: 25px 5% 25px 5%;
+  text-align: center;
+}
+
+.profile-pic {
+  
+  max-height: 225px;
+  max-width: 367px;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  
+}
+
+/*****************************************
+      ~~~~~  Portfolio Styles  ~~~~~
+*****************************************/
+
+.portfolio-content {
+	
+	text-align: center;
+	list-style: none;
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 2.5%;
+	display: flex;
+	flex-flow: column;
+
+}
+
+.portfolio-item {
+
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+
+}
+
+.portfolio-item img {
+  
+  	width: 100%;
+  	height: auto;
+  	padding: 0;
+  	margin: 0;
+  
+  }
+  
+.portfolio-item img:hover {
+
+	opacity: 0.4;
+}
+
+/*****************************************
+      ~~~~~  Contact Styles  ~~~~~
+*****************************************/
+
+.contact {
+
+	padding: 25px;
+	background-color: #fafafa;
+	text-align: center;
+	
+}
+
+.contact-content {
+	
+	max-width: 520px;
+	margin: 0 auto;
+	
+}
+
+/*****************************************
+       ~~~~~  Footer Styles  ~~~~~
+*****************************************/
+
+footer {
+	
+	height: 200px;
+	
+}
+
 
 /*****************************************
        ~~~~~  Tablet Styles  ~~~~~
 *****************************************/
 
-@media (min-width: 767px) {
+@media (min-width: 640px) {
   
   
   /* Nav */
@@ -177,9 +262,25 @@ h2 {
     
   }
 
+
+ /* Portfolio */
+
+  
+  .portfolio-content {
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: space-around;
+  }
+  
+  .portfolio-item {
+  	
+  	width: 50%;
+  	height: auto;
+  	
+  }
+  
+    
 }
-
-
 
 /*****************************************
        ~~~~~  Desktop Styles  ~~~~~
@@ -187,12 +288,6 @@ h2 {
 
 @media (min-width: 1023px) {
   
-  .header-container {
-    
-    max-width: 1100px;
-    align-self: center;
-    
-  }
 
   .desktop-nav {
     
@@ -215,9 +310,14 @@ h2 {
     margin: 15px 3% 30px auto;
     
   }
-
-
-
+  
+    
+  .portfolio-item {
+  
+  	width: 33%;
+  	height: auto;
+  
+  }
 
 }
 
